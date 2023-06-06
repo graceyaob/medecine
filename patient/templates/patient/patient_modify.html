@@ -1,0 +1,8 @@
+
+  <h1>Mise à jour du Patient {{patient.nom}} {{patient.prenom}}</h1>
+
+  <form action="{% url 'modifier' patient.id %}" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Envoyer">
+ </form>
