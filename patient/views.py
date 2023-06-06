@@ -1,8 +1,8 @@
 from django.shortcuts import render,redirect
 from patient.models import Patient
-from patient.forms import PatientUsForm,PatientForm
+from patient.forms import PatientForm
 from django.contrib.auth.models import User
-from .forms import Name
+
 
 
  
