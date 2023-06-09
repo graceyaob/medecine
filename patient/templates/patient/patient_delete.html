@@ -1,4 +1,4 @@
-<p>Etes-vous sûr de vouloir supprimer le groupe : {{ patient.nom }}  {{patient.prenom}}?</p>
+<p>Etes-vous sûr de vouloir supprimer le patient : {{ patient.nom }}  {{patient.prenom}}?</p>
 
 <form action="{% url 'delete' patient.id %}" method="post">
 {% csrf_token %}

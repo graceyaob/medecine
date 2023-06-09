@@ -21,7 +21,7 @@ from patient import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('liste/', views.liste,name = "liste"),
+    path('', views.liste,name = "liste"),
     path('patient/', views.patient_create, name = "patient"),
     path('supprimer/<int:id>/',views.patient_delete, name="delete"),
     path('modifier/<int:id>/',views.patient_modify, name = "modifier")

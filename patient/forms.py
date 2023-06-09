@@ -11,4 +11,8 @@ class PatientUsForm(forms.Form):
 class PatientForm(forms.ModelForm):
    class Meta:
         model = Patient
-        fields = '__all__'
+        fields = ["nom", "prenom", "date_de_naissance", "email"]
+        widgets = {
+            "date_de_naissance": forms.DateInput(attrs={"type": "date"}),
+            "email": forms.EmailInput()
+        }
